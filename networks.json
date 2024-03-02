@@ -1,0 +1,8 @@
+{
+  "mainnet": {
+    "Contract": {
+      "address": "0x7c7ffbe943f8dcd080c7cfc17f4da11660790e9b",
+      "startBlock": 19324070
+    }
+  }
+}

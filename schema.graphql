@@ -1,0 +1,29 @@
+type Initialized @entity(immutable: true) {
+  id: Bytes!
+  version: Int! # uint8
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type NewShortcutCreated @entity(immutable: true) {
+  id: Bytes!
+  params_router: Bytes! # address
+  params_tokenOut: Bytes! # address
+  params_chainId: BigInt! # uint256
+  params_fee: BigInt! # uint256
+  params_dex: Int! # uint8
+  shortcut: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type OwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
